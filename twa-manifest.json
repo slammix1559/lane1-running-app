@@ -1,0 +1,27 @@
+{
+  "packageId": "it.branchi.lane1.twa",
+  "host": "slammix1559.github.io",
+  "name": "LANE 1",
+  "launcherName": "LANE 1",
+  "display": "standalone",
+  "themeColor": "#1B1B1D",
+  "navigationColor": "#1B1B1D",
+  "backgroundColor": "#1B1B1D",
+  "startUrl": "/lane1-running-app/index.html",
+  "iconUrl": "https://slammix1559.github.io/lane1-running-app/icons/icon-512.png",
+  "maskableIconUrl": "https://slammix1559.github.io/lane1-running-app/icons/icon-512-maskable.png",
+  "webManifestUrl": "https://slammix1559.github.io/lane1-running-app/manifest.json",
+  "shortcuts": [],
+  "orientation": "portrait",
+  "fallbackType": "customtabs",
+  "features": {
+    "locationDelegation": { "enabled": true },
+    "playBilling": { "enabled": false }
+  },
+  "enableNotifications": false,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://slammix1559.github.io/lane1-running-app/",
+  "minSdkVersion": 21,
+  "_note_it": "Sostituisci 'slammix1559' e 'lane1-running-app' con il tuo utente/repo GitHub reali una volta pubblicata l'app. Questo file va incollato nelle opzioni avanzate di PWABuilder, oppure usato con 'bubblewrap init --manifest=twa-manifest.json' se preferisci generare l'APK da riga di comando (richiede Android SDK e JDK installati sul tuo PC, o una pipeline GitHub Actions)."
+}

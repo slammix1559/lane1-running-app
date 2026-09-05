@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+<title>LANE 1 — Preparazione podistica</title>
+<meta name="description" content="Costruisci le sedute di allenamento e seguile dal vivo con GPS, cardio e avvisi vocali sul passo." />
+<meta name="theme-color" content="#1B1B1D" />
+
+<link rel="manifest" href="./manifest.json" />
+<link rel="icon" href="./icons/icon-192.png" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="LANE 1" />
+<link rel="stylesheet" href="./bundle.css" />
+
+<style>
+  html, body { margin: 0; padding: 0; background: #1B1B1D; }
+  #root { min-height: 100vh; }
+  .boot-splash {
+    position: fixed; inset: 0; background: #1B1B1D; color: #EFF0EC;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-family: -apple-system, system-ui, sans-serif; gap: 10px; z-index: 9999;
+  }
+  .boot-splash.hide { display: none; }
+</style>
+</head>
+<body>
+  <div id="boot-splash" class="boot-splash">
+    <div style="font-size:28px;">⏱</div>
+    <div>LANE 1</div>
+  </div>
+  <div id="root"></div>
+  <script src="./bundle.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      requestAnimationFrame(() => {
+        const s = document.getElementById("boot-splash");
+        if (s) s.classList.add("hide");
+      });
+    });
+  </script>
+</body>
+</html>
